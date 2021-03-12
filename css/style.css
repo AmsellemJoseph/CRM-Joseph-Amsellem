@@ -40,13 +40,16 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 1px solid black;
     align-items: center;
+    margin-right: 250px;
 }
 
 #containerBase{
     display: flex;
     width: 100vw;
     justify-content: space-between;
+    align-items: center;
 }
 .style1{
     position: relative;
@@ -55,7 +58,7 @@ body{
     width: 600px;
     height: 100vh;
     border-radius: 100% 0% 100% 0% / 0% 73% 27% 100% ;
-    background: rgba(142, 68, 173,0.4);
+    background: rgba(95, 39, 205,0.4);
 }
 .style2{
     position: absolute;
@@ -64,7 +67,7 @@ body{
     width: 600px;
     height: 100vh;
     border-radius: 39% 61% 100% 0% / 0% 30% 70% 100%  ;
-    background: rgba(142, 68, 173,0.4);
+    background: rgba(95, 39, 205,0.4);
 }
 .style3{
     position: absolute;
@@ -73,5 +76,14 @@ body{
     width: 600px;
     height: 100vh;
     border-radius: 84% 16% 100% 0% / 28% 100% 0% 72%   ;
-    background: rgba(142, 68, 173,0.4);
+    background: rgba(95, 39, 205,0.4);
+}
+.style4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 100vh;
+    /* border-radius: 84% 16% 100% 0% / 28% 100% 0% 72%   ; */
+    background: rgba(95, 39, 205,0.4);
 }

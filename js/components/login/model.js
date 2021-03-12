@@ -3,6 +3,7 @@
 
 
 const login = {
+    tryPin:6,
     pin: "",
     xTimeout: null,
     username: "",
@@ -12,7 +13,7 @@ const login = {
     police:new Audio("assets/sounds/police.mp3"),
     getUserName: function () {
         login.username = document.getElementById("userName").value;
-        console.log(login.username);
+
     },
     composition:  function () {
         login.bip.play();
@@ -22,7 +23,7 @@ const login = {
         }
         this.style.color = "blue";
         login.pin = login.pin + this.getAttribute("data-value");
-        console.log(login.pin);
+
         this.removeEventListener("click", login.composition);
         if ( login.count(login.pin)) {
             setTimeout(() => {
@@ -80,7 +81,7 @@ const login = {
         if (x.length >= 4) {
             flag = true;
         }
-        console.log(flag);
+
         return flag;
     },
 
@@ -89,12 +90,14 @@ const login = {
         var URL = `https://crm-joseph-amselle-d8a9b3.appdrag.site/api/crm users/getUserByCat?username=${x}&pin=${y}`
         await $.get(URL).then((data) => {
             if (data.Table != null && data.Table.length > 0) {
+                login.tryPin++;
                 login.data = data.Table;
-                console.log(login.data);
+
                 flag = true
             }
+            login.tryPin--;
         })
-        console.log(flag);
+
         return flag;
     },
     verif: async function (x) {

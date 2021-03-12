@@ -1,5 +1,5 @@
 var main = document.getElementById("main");
-function login() {
+function init() {
     main.innerHTML = `<div class="container">
     <div id="num1" class="num" data-value="1">1</div>
     <div id="num2" class="num" data-value="2">2</div>
@@ -14,19 +14,6 @@ function login() {
     </div>`
 }
 
-function init() {
-    main.innerHTML = `<div id="containerBase">
-    <div>
-    <div class="style1"></div>
-    <div class="style2"></div>
-    <div class="style3"></div>
-    </div>
-    <div class="containerUserName">
-    <h1>Please enter your username</h1>
-    <input type="text" id="userName" placeholder="username">
-<button id="btnUsername">Enter</button>
-    </div></div>`
-}
 
 function champion() {
     main.innerHTML = `<h1>CHAMPION</h1>`
@@ -36,4 +23,4 @@ function police() {
     main.innerHTML = `<h1>C'est pas beau!!</h1>`
 }
 
-export { init, login, champion, police }
+export { init, champion, police }
