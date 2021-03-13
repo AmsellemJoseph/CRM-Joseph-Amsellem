@@ -21,7 +21,8 @@ const login = {
         if (login.countDown()) {
             login.pin = "";
         }
-        this.style.color = "blue";
+        // this.style.color = "blue";
+        $(this).animate({color: "#f1f1f1",backgroundColor: "#a976c3",borderColor:"#f1f1f1"}, 200);
         login.pin = login.pin + this.getAttribute("data-value");
 
         this.removeEventListener("click", login.composition);
@@ -38,7 +39,7 @@ const login = {
         var num = document.querySelectorAll(".num");
         for (let i = 0; i < 10; i++) {
             num[i].addEventListener("click", login.composition);
-            num[i].style.color = "#f1f1f1"
+            $(num[i]).animate({color: "#a976c3",backgroundColor: "f1f1f1"}, 200);
         }
     },
     btnPin:function(){
@@ -97,7 +98,6 @@ const login = {
             }
             login.tryPin--;
         })
-
         return flag;
     },
     verif: async function (x) {

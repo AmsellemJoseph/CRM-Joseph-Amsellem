@@ -1,6 +1,7 @@
 var main = document.getElementById("main");
 function init() {
-    main.innerHTML = `<div class="container">
+    main.innerHTML = `<div id="containerBasePin">
+    <div class="containerPin">
     <div id="num1" class="num" data-value="1">1</div>
     <div id="num2" class="num" data-value="2">2</div>
     <div id="num3" class="num" data-value="3">3</div>
@@ -11,6 +12,7 @@ function init() {
     <div id="num8" class="num" data-value="8">8</div>
     <div id="num9" class="num" data-value="9">9</div>
     <div id="num0" class="num" data-value="0">0</div>
+    </div>
     </div>`
 }
 

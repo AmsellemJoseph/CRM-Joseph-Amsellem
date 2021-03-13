@@ -1,7 +1,7 @@
 *,::before,::after{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 body{
     width: 100%;
@@ -10,28 +10,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
-.container{
+.containerPin{
     width: 500px;
     height: 500px;
-    background: #f1f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .num{
     width: 100px;
     height: 100px;
-    background: #333;
+    background: #f1f1f1;
     margin:0px 15px;
-    color: #f1f1f1;
+    color: #a976c3;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid #a976c3;
 }
 
 .containerUserName{
@@ -48,42 +51,63 @@ body{
 #containerBase{
     display: flex;
     width: 100vw;
+    height:  100vh;
     justify-content: space-between;
     align-items: center;
+    background: url("../assets/images/background.jpg") no-repeat center/cover
 }
-.style1{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 100vh;
-    border-radius: 100% 0% 100% 0% / 0% 73% 27% 100% ;
-    background: rgba(95, 39, 205,0.4);
+#welcome{
+    color: #130f40;
+    margin: auto;
 }
-.style2{
+
+.containerUserName h2{
+    font-size: 35px;
+    color: #130f40;
+}
+
+#userName, #btnUsername{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 9999px;
+}
+#btnUsername{
+    color: #a976c3;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    border:2px solid #a976c3;
+    transition: 0.2s ease-in-out all;
+    background: #f1f1f1;
+}
+#btnUsername:hover{
+    color: #f1f1f1;
+    background: #a976c3;
+    border:2px solid #f1f1f1;
+}
+#btnUsername:active{
+    color: #a976c3;
+    background: #f1f1f1;
+    border:2px solid #a976c3;
+}
+#userName{
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+#userCircle{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 100vh;
-    border-radius: 39% 61% 100% 0% / 0% 30% 70% 100%  ;
-    background: rgba(95, 39, 205,0.4);
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
 }
-.style3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 100vh;
-    border-radius: 84% 16% 100% 0% / 28% 100% 0% 72%   ;
-    background: rgba(95, 39, 205,0.4);
-}
-.style4{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 100vh;
-    /* border-radius: 84% 16% 100% 0% / 28% 100% 0% 72%   ; */
-    background: rgba(95, 39, 205,0.4);
+#containerBasePin{
+    display: flex;
+    width: 100vw;
+    height:  100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/images/background.jpg") no-repeat center/cover
 }
