@@ -1,3 +1,6 @@
+
+
+
 var main = document.getElementById("main");
 function init() {
     main.innerHTML = `<div id="containerBasePin">
@@ -16,13 +19,12 @@ function init() {
     </div>`
 }
 
-
-function champion() {
-    main.innerHTML = `<h1>CHAMPION</h1>`
+function error(){
+    swal("Error","It's not the good password","error");
+}
+function welcome(x,y){
+    swal(`Welcome ${x} ${y}`,"","success");
 }
 
-function police() {
-    main.innerHTML = `<h1>C'est pas beau!!</h1>`
-}
 
-export { init, champion, police }
+export { init, error,welcome}

@@ -13,9 +13,6 @@ function virtualRouter() {
         case "#userName":
             UserName.init();
             break;
-        case "#pin":
-            Login.init();
-            break;
         case "#home":
             init();
             break;

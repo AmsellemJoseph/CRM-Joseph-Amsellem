@@ -9,8 +9,7 @@ export function init(){
     
     btnUsername.addEventListener("click", () => {
         var username = document.getElementById("userName").value;
-        Login.init(username);
-        console.log(username);
+       return Login.init(document.getElementById("userName").value);
     })
 
 }
