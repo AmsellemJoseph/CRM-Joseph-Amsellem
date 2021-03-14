@@ -3,6 +3,7 @@ import * as Login from "../controller.js"
 import * as Model from "./model.js"
 
 export async function init(arr) {
+    View.init()
     console.log(arr.role);
     switch (arr.role) {
         case "Administrateur":

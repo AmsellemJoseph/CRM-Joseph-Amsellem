@@ -2,7 +2,6 @@ import * as View from "./view.js";
 import * as Model from "./model.js";
 import * as Crm from "../login/crm/controller.js"
 import * as Username from "../userName/controller.js"
-// import * as Test from "../test/controller.js"
 
 export function init(username) {
     View.init();
@@ -19,14 +18,15 @@ export function init(username) {
                 if (await Model.login.data[0].role != null) {
                     Model.login.validate.play();
                     clearTimeout(Model.login.xTimeout);
-                    View.welcome(Model.login.data[0].fName,Model.login.data[0].lName);
+                    View.welcome(Model.login.data[0].fName, Model.login.data[0].lName);
                     return Crm.init(Model.login.data[0])
-
                 }
-            } else {View.error();
+            } else {
+                View.error();
             } if (Model.login.tryPin == 0) {
                 Model.login.police.play();
                 View.police();
+                Username.init();
             }
             // console.log(Model.login.tryPin);
         }

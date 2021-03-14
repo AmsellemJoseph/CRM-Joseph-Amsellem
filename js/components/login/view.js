@@ -19,12 +19,15 @@ function init() {
     </div>`
 }
 
-function error(){
-    swal("Error","It's not the good password","error");
+function error() {
+    swal("Error", "It's not the good password", "error");
 }
-function welcome(x,y){
-    swal(`Welcome ${x} ${y}`,"","success");
+function welcome(x, y) {
+    swal(`Welcome ${x} ${y}`, "", "success");
+}
+function police() {
+    swal("POLICE CALLED", "", "error");
 }
 
 
-export { init, error,welcome}
+export { init, error, welcome, police }

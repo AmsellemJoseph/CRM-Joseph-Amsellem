@@ -109,3 +109,18 @@ body{
     align-items: center;
     background: url("../assets/images/background.jpg") no-repeat center/cover
 }
+.generalContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+#containerForm{
+    width: 500px;
+    height: 100vh;
+    background:url("../assets/images/background.jpg") no-repeat center/cover;
+}
+#containerUsers{
+    width: 500px;
+    height: 100vh;
+}
