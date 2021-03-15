@@ -1,6 +1,8 @@
 import * as View from "./view.js"
 import * as Login from "../controller.js"
 import * as Model from "./model.js"
+import * as Table from "../crm/table/controller.js"
+import * as Form from "../crm/form/controller.js"
 
 export async function init(arr) {
     View.init()
@@ -31,5 +33,7 @@ export async function init(arr) {
     //     Model.roleUser.dataUser.push(arr);
     //     await Model.roleUser.manager();
     // }else if()
-    View.users(Model.roleUser.dataUser);
+    Table.init(Model.roleUser.dataUser);
+    Form.init(Model.roleUser.dataUser);
+    // Model.roleUser.yuyu();
 }

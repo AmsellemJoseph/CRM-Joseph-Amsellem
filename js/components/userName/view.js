@@ -1,7 +1,7 @@
 export function init() {
     main.innerHTML = `<div id="containerBase">
     <div id="welcome">
-    <h1>Welcome to Jo Ams's CRM!
+    <h1>Welcome to our CRM!
     </div>
     <div class="containerUserName">
     <h2>Please enter your username</h2>
