@@ -183,7 +183,7 @@ h1{
     align-items: center;
 }
 
-#verifPin{
+#verifPin,#verifuserName{
     font-size: 15px;
     text-align: center;
     background-color: #f1f1f1;

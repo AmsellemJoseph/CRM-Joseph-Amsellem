@@ -6,7 +6,9 @@ export function form(arr){
     <div id="arrangeForm">
     <input type="text" name="fName" placeholder="First Name" class="inp" required>
     <input type="text" name="lName" placeholder="Last Name"class="inp" required>
-    <input type="text" name="userName" placeholder="Username"class="inp" required>
+    <div>
+    <input type="text" name="userName" placeholder="Username"class="inp verifuserName" required>
+    <div id="verifuserName"><p>This username already exists</p></div></div>
     <div>
     <input type="text" name="PIN" placeholder="Enter a password" maxlength="4" minlength="4"class="inp" id="pin" required>
     <div id="verifPin"><p>Please choose a password with four different digits</p></div></div>
