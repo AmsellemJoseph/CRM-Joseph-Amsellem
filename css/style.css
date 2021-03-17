@@ -147,13 +147,16 @@ table{
     color: #490c8f;
     font-family: 'Redressed', cursive;
 }
-table a{
-    color:#ffc2eb
+table a,th{
+    color:#ffc2eb;
 }
 td{
     font-family: 'Roboto Condensed', sans-serif;
     color: #f1f1f1;
     text-shadow: 1px 1px 0px #000, -1px 1px 0px #000,-1px -1px 0px #000,1px -1px 0px #000;
+}
+.fa{
+    color: #f1f1f1;
 }
 h1{
     font-family: 'Redressed', cursive;
@@ -199,4 +202,8 @@ h1{
 }
 .trash{
     cursor: pointer;
+}
+.change{
+    cursor: pointer;
+    margin-right: 20px;
 }

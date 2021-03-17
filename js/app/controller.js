@@ -6,6 +6,7 @@ export function init() {
     location.hash = "#home"
     window.addEventListener("hashchange", virtualRouter);
     UserName.init();
+    
 }
 function virtualRouter() {
     var hash = location.hash;

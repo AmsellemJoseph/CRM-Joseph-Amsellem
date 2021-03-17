@@ -9,12 +9,20 @@ export function init(arr)
     Model.yuyu();
     var containerUsers = document.getElementById("containerUsers");
 
-        var trash = document.querySelectorAll(".trash");
-        for(let i=0;i<trash.length;i++){
-            trash[i].addEventListener("click",async function(){
-               await Delete.deleteUser(this.id,arr);
-                View.deleteUser(this.parentElement.parentElement);
-            })
-        }
+        var editableTable = new BSTable("table", {
+            
+            onEdit: function () { },
+            
+            onBeforeDelete: function () { },
+            
+            onDelete: function () { } ,
+            
+            onAdd: function () { },
+            
+        });
+        editableTable.init();
+        editableTable.refresh();
+;
+
 
 }

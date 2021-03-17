@@ -30,3 +30,15 @@ export function spliceArr(user,arr){
     console.log(arrMaj);
     return arrMaj;
 }
+
+// export var editableTable = new BSTable("table", {
+
+//     onEdit: function () { },
+
+//     onBeforeDelete: function () { },
+
+//     onDelete: function () {alert("salut") },
+
+//     onAdd: function () { },
+    
+// });

@@ -12,7 +12,6 @@ export function users(arr){
             <th>Username</th>
             <th>Role</th>
             <th>Pin</th>
-            <th>Action</th>
         </tr>
     </thead>
     <tbody>`;
@@ -23,7 +22,6 @@ export function users(arr){
         <td>${arr.userName}</td>
         <td>${arr.role}</td>
         <td>${arr.PIN}</td>
-        <td><i id=${arr.id}  class="trash fas fa-trash-alt"></i></td>
         </tr>`
     });
     toAppend +=`</tbody>
