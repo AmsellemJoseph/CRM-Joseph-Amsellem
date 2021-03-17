@@ -12,7 +12,6 @@ export function init(arr) {
         if (await Model.registration(this)) {
             arr.push(Model.arrUser.arr);
             Table.init(arr);
-            console.log(arr);
         }
 
     })

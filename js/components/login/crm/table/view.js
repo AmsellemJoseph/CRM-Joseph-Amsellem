@@ -23,10 +23,14 @@ export function users(arr){
         <td>${arr.userName}</td>
         <td>${arr.role}</td>
         <td>${arr.PIN}</td>
-        <td>yuyu</td>
+        <td><i id=${arr.id}  class="trash fas fa-trash-alt"></i></td>
         </tr>`
     });
     toAppend +=`</tbody>
     </table>`
     containerUsers.innerHTML=toAppend;
+}
+
+export function deleteUser(user){
+    user.style.display = "none";
 }

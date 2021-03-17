@@ -5,7 +5,6 @@ import * as Username from "../userName/controller.js"
 
 export function init(username) {
     View.init();
-    console.log(username);
     Model.login.tryPin = 3;
     location.hash = "#pin"
     var container = document.querySelector(".containerPin");

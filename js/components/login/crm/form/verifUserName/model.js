@@ -4,8 +4,6 @@ export async function verify(username) {
 
     await $.get(URL).then((data) => {
         if(data.Table !=null && data.Table.length>0){
-            console.log(data.Table.username);
-            console.log(username);
             flag=true;
         }
     })
